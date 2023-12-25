@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: Open Sans Condensed;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Merriweather;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+
+.language-toggle {
+    position: fixed; /* or another positioning as per your layout */
+    top: 10px; /* adjust as needed */
+    right: 10px; /* adjust as needed */
+    background-color: #f0f0f0; /* your choice of color */
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333; /* your choice of text color */
+}
+.language-toggle:hover {
+    background-color: #e0e0e0; /* color on hover */
+}
+
+main > a {
+    float: right;
+    text-decoration: none; /* Убрать подчеркивание текста */
+    color: inherit; /* Цвет текста, соответствующий основному цвету текста */
+    display: flex; /* Использовать flexbox для выравнивания иконки и текста */
+    align-items: center; /* Выровнять элементы по центру */
+  }
+  
+  main > a > i {
+    margin-right: 5px; /* Отступ справа от иконки */
+  }
+
+  .fas.fa-language {
+    font-size: 24px; /* Устанавливает размер иконки */
+    color: #555; /* Устанавливает цвет иконки */
+    vertical-align: middle; /* Выравнивает иконку по вертикали относительно соседнего текста */
+  }
+  .language-switcher {
+    text-align: right; /* Выравнивание справа */
+  }
+  .language-switcher img,
+  .language-switcher a,
+  .language-switcher span {
+    display: inline; /* Элементы будут в одной строке */
+    margin-right: 5px; /* Отступ справа для всех элементов кроме последнего */
+    text-decoration: none; /* Убрать подчеркивание у ссылок */
+    color: inherit; /* Цвет текста, как у родительского элемента */
+  }
+  
+  .language-switcher a:last-child {
+    margin-right: 0; /* Убрать отступ у последней ссылки */
+  }
+  @media screen and (max-width: 600px) {
+    /* Стили для мобильных устройств */
+  }
+  
