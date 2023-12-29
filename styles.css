@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: Open Sans Condensed;
+  
+
+  font-family: Lato;
   padding: 20px;
 }
 
@@ -26,7 +28,8 @@ h1, h2, p {
 
 .menu {
   width: 80%;
-  background-color: burlywood;
+  background-color: whitesmoke;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -40,9 +43,9 @@ img {
 }
 
 hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
+  height: 1px;
+  /* background-color: grey; */
+  border-color: darkgrey;
 }
 
 .bottom-line {
@@ -50,7 +53,8 @@ hr {
 }
 
 h1, h2 {
-  font-family: Merriweather;
+  font-family: Roboto;
+  color: black;
 }
 
 .item p {
@@ -81,19 +85,19 @@ footer {
 }
 
 a {
-  color: black;
+  color: grey;
 }
 
 a:visited {
-  color: black;
+  color: grey;
 }
 
 a:hover {
-  color: brown;
+  color: black;
 }
 
 a:active {
-  color: brown;
+  color: black;
 }
 
 .language-toggle {
@@ -146,3 +150,34 @@ main > a {
     /* Стили для мобильных устройств */
   }
   
+  @keyframes shineMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+
+
+
+.deep3dBackground {
+  background: linear-gradient(45deg, color1, color2, color3);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes colorChange {
+  0% { background-color: #ffbdbd; } /* бледно-розовый */
+  20% { background-color: #ffdfba; } /* бледно-оранжевый */
+  40% { background-color: #ffffba; } /* бледно-желтый */
+  60% { background-color: #baffc9; } /* бледно-зеленый */
+  80% { background-color: #bae1ff; } /* бледно-голубой */
+  100% { background-color: #e2baff; } /* бледно-фиолетовый */
+}
+
+.colorChangingBackground {
+  animation: colorChange 20s ease-in-out infinite;
+}
+
+
+
+
+
